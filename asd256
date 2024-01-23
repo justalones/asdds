@@ -674,7 +674,7 @@ do
             end
 
             local Tabs = {
-                Main = Window:AddTab({ Title = "Misc", Icon = "star" }),
+                Main = Window:AddTab({ Title = "Auto Attack", Icon = "sword" }),
             }
 
                 -- Start of main script block
@@ -685,7 +685,7 @@ local selectedValue = ""
 -- Dropdown creation block
 local Dropdown = Tabs.Main:AddDropdown("Dropdown", {
     Title = "Dropdown",
-    Values = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen"},
+    Values = {"Combat", "Night Blade", "Katana", "Dual Katana", "Venom Dagger", "Shadow Monarch Sword", "Triple Katana", "The Battle Spear", "Hassaikai", "Mogur", "ThunderPole", "Bisento", "NightBlade", "ShadowBlades", "Gear5 Sword", "Sea Beast Blade"},
     Multi = false,
     Default = 1,
 })
@@ -708,21 +708,95 @@ local function HandleToggleAction()
         
         if isToggleOn then
             if selectedValue == "Combat" then
-                -- Add your logic for option "one" here
-                print("Toggle is ON and option 'one' selected")
-            elseif selectedValue == "Katana" then
-                -- Add your logic for option "two" here
-                print("Toggle is ON and option 'two' selected")
-            elseif selectedValue == "Dual Katana" then
-                -- Add your logic for option "three" here
-            elseif selectedValue == "Triple Katana" then
-
-            elseif selectedValue == "Hassaikai" then
-
-            elseif selectedValue == "Bisento" then
-
-                print("Toggle is ON and option 'three' selected")
-            -- Add more cases for other dropdown values if needed
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.Combat.Remotes.attack:FireServer(unpack(args))                            
+            elseif dropdownValue == "Night Blade" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.NightBlade.Remotes.attack:FireServer(unpack(args))   
+            elseif dropdownValue == "Katana" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.Katana.Remotes.attack:FireServer(unpack(args)) 
+            elseif dropdownValue == "Dual Katana" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.DualKatana.Remotes.attack:FireServer(unpack(args)) 
+            elseif dropdownValue == "Venom Dagger" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.VenomDagger.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "Shark Blade" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.SharkBlade.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "Mogur" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.Mogur.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "Triple Katana" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.TripleKatana.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "Thunder Pole" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.ThunderPole.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "Bisento" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.Bisento.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "Shadow Blades" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.ShadowBlades.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "Sea Beast Blade" 
+            local args = {
+                [1] = "attack"
+            }
+            
+            game:GetService("Players").LocalPlayer.Character.SeaBeastBlade.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "Hassaikai" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.Hassaikai.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "Gear5 Sword" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.Gear5Sword.Remotes.attack:FireServer(unpack(args))
+            elseif dropdownValue == "The Battle Spear" then
+                local args = {
+                    [1] = "attack"
+                }
+                
+                game:GetService("Players").LocalPlayer.Character.TheBattleSpear.Remotes.attack:FireServer(unpack(args))
             else
                 print("Toggle is ON and unexpected option selected")
             end
