@@ -321,7 +321,7 @@ do
             -- Dropdown creation block
             local Dropdown = Tabs.Main:AddDropdown("Dropdown", {
                 Title = "Select Option to Auto Skill",
-                Values = {"BUDHA", "BARRIER", "FIRE", "SPIN", "SHADOW", "DRAGON", "DOUGH", "UTA", "ICE", "GHOST", "LIGHT", "SAND", "CHOP", "KILO", "SPIN", "SHADOW MONARCH SWORD", "KAMING WRATH", "VENOM DAGGER",},
+                Values = {"BUDHA", "BARRIER", "FIRE", "SPIN", "SHADOW", "DRAGON", "DOUGH", "UTA", "ICE", "GHOST", "LIGHT", "SAND", "CHOP", "KILO", "SPIN", "SHADOW MONARCH SWORD", "KAMING WRATH", "VENOM DAGGER"},
                 Multi = false,
                 Default = 1,
             })
