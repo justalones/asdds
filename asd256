@@ -684,7 +684,7 @@ local selectedValue = ""
 
 -- Dropdown creation block
 local Dropdown = Tabs.Main:AddDropdown("Dropdown", {
-    Title = "Dropdown",
+    Title = "Select a Weapon",
     Values = {"Combat", "Night Blade", "Katana", "Dual Katana", "Venom Dagger", "Shadow Monarch Sword", "Triple Katana", "The Battle Spear", "Hassaikai", "Mogur", "ThunderPole", "Bisento", "NightBlade", "ShadowBlades", "Gear5 Sword", "Sea Beast Blade"},
     Multi = false,
     Default = 1,
@@ -698,7 +698,7 @@ Dropdown:OnChanged(function(Value)
 end)
 
 -- Toggle creation block
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "BROWN CRATE", Default = false })
+local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Use Selected Weapon", Default = false })
 
 
 -- Function to handle actions based on toggle state
