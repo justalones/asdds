@@ -176,7 +176,7 @@ do
     -- Dropdown creation block
     local Dropdown = Tabs.Main:AddDropdown("Dropdown", {
         Title = "Select a Weapon to Use",
-        Values = {"Combat", "Night Blade", "Katana", "Dual Katana", "Venom Dagger", "Shadow Monarch Sword", "Triple Katana", "The Battle Spear", "Hassaikai", "Mogur", "ThunderPole", "Bisento", "NightBlade", "ShadowBlades", "Gear5 Sword", "Sea Beast Blade",},
+        Values = {"Combat", "Night Blade", "Katana", "Dual Katana", "Venom Dagger", "Shadow Monarch Sword", "Triple Katana", "The Battle Spear", "Hassaikai", "Mogur", "ThunderPole", "Bisento", "NightBlade", "ShadowBlades", "Gear5 Sword", "Sea Beast Blade"},
         Multi = false,
         Default = 1,
     })
